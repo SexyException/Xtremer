@@ -16,7 +16,7 @@ start_txt = """**
 
 
 
-@app.on_message(filters.command("stranger"))
+@app.on_message(filters.command("Owner"))
 async def start(_, msg):
     buttons = [
         [ 
@@ -31,7 +31,7 @@ async def start(_, msg):
     reply_markup = InlineKeyboardMarkup(buttons)
     
     await msg.reply_photo(
-        photo="https://graph.org/file/33bc093c89898dcc318ae.jpg",
+        photo="https://telegra.ph/file/c37df67b6ea049c97c2bd.jpg",
         caption=start_txt,
         reply_markup=reply_markup
     )
