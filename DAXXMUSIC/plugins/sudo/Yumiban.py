@@ -52,7 +52,7 @@ channel = ["channel"]
 # ========================================= #
 
 
-@app.on_message(filters.command(["lex","lexa"], prefixes=["a", "A"]) & admin_filter)
+@app.on_message(filters.command(["kitt","Kitt"], prefixes=["u", "U"]) & admin_filter)
 async def restriction_app(app :app, message):
     reply = message.reply_to_message
     chat_id = message.chat.id
@@ -70,13 +70,13 @@ async def restriction_app(app :app, message):
                     await message.reply(random.choice(strict_txt))          
                 else:
                     await app.ban_chat_member(chat_id, user_id)
-                    await message.reply("ᴏᴋ , ʙᴀɴ ᴋʀ ᴅɪʏᴀ ᴍᴀᴅᴀʀᴄʜᴏᴅ ʜᴀᴍᴀʀᴇ ɢʀᴏᴜᴘ ᴍᴇ ʀʜɴᴇ ʟᴀʏᴀᴋ ɴʜɪ ᴛʜᴀ ⚡✨ !")
+                    await message.reply("𝗼𝗞 ,  𝗦𝗨𝗖𝗖𝗘𝗦𝗦𝗙𝗨𝗟𝗟𝗬 𝗕𝗔𝗡𝗡𝗘𝗗 𝗢𝗡𝗘 𝗠𝗔𝗗𝗔𝗥𝗖𝗛𝗢𝗗 𝗕𝗬 𝗦𝗧𝗔𝗙𝗙 💞 !")
                     
         for unbanned in data:
             print(f"present {unbanned}")
             if unbanned in unban:
                 await app.unban_chat_member(chat_id, user_id)
-                await message.reply(f"ᴏᴋ , ᴜɴʙᴀɴ ᴋʀ ᴅɪʏᴀ , ᴇᴋ ᴏʀ ᴄʜᴀɴᴄᴇ ᴅᴇ ᴅɪʏᴀ ᴜsᴋᴏ ✨🤍") 
+                await message.reply(f"𝗼𝗞 , 𝗦𝗨𝗖𝗖𝗘𝗦𝗦𝗙𝗨𝗟𝗟𝗬 𝗨𝗡𝗕𝗔𝗡𝗡𝗘𝗗 ....!! 𝗔𝗡𝗢𝗧𝗛𝗘𝗥 𝗖𝗛𝗔𝗡𝗖𝗘... 𝗕𝗘 𝗦𝗔𝗙𝗘 🥴") 
                 
         for kicked in data:
             print(f"present {kicked}")
@@ -98,14 +98,14 @@ async def restriction_app(app :app, message):
                 else:
                     permissions = ChatPermissions(can_send_messages=False)
                     await message.chat.restrict_member(user_id, permissions)
-                    await message.reply(f"ᴏᴋ , ʏᴇ ᴄʜᴜᴛɪʏᴀ ʟᴏɢᴏ ᴋᴏ ᴋʏᴀ ʜɪ ʙᴏʟɴᴇ ᴅᴏ ᴍᴜᴛᴇ ʀᴀʜᴏ ᴛᴜᴍ 🔪.") 
+                    await message.reply(f"𝗢𝗸 , 𝗬𝗘𝗔𝗛 𝗠𝗨𝗧𝗘𝗗....!!  𝗬𝗘 𝗕𝗞𝗟 𝗛𝗘 𝗢𝗥 𝗕𝗞𝗟 𝗛𝗜 𝗥𝗔𝗛𝗘𝗚𝗔 👻 ... .") 
                     
         for unmuted in data:
             print(f"present {unmuted}")            
             if unmuted in unmute:
                 permissions = ChatPermissions(can_send_messages=True)
                 await message.chat.restrict_member(user_id, permissions)
-                await message.reply(f"ᴏᴋ , ᴜɴᴍᴜᴛᴇ ᴋʀ ᴅᴇᴛᴀ ʜᴜ ᴀɢᴀʀ ᴛᴜᴍ ᴋᴇʜᴛᴇ ʜᴏ ᴛᴏ 💌!")   
+                await message.reply(f"𝗢𝗸 , 𝗨𝗡𝗠𝗨𝗧𝗘𝗗... 𝗚𝗜𝗩𝗜𝗡𝗚 𝗔𝗡𝗢𝗧𝗛𝗘𝗥 𝗖𝗛𝗔𝗡𝗖𝗘 𝗧𝗢 𝗨𝗦𝗘𝗥...!! ✨😙!")   
 
 
         for promoted in data:
