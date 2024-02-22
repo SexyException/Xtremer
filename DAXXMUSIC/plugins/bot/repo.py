@@ -16,15 +16,15 @@ start_txt = """**
 
 
 
-@app.on_message(filters.command("Owner"))
+@app.on_message(filters.command("repo"))
 async def start(_, msg):
     buttons = [
         [ 
-          InlineKeyboardButton("ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")
+          InlineKeyboardButton("𝐀ᴅᴅ 𝐁ᴀʙʏ", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")
         ],
         [
-          InlineKeyboardButton("sᴜᴘᴘᴏʀᴛ", url="https://t.me/equinoxbots"),
-          InlineKeyboardButton("ᴅᴍ ᴏғ sᴛʀᴀɴɢᴇʀ ᴘᴀᴘᴀ ", url="https://t.me/NoMoreTyMWaStE"),
+          InlineKeyboardButton("𝐑ᴇᴘᴏ", url="https://github.com/Shivasengar12/Kittuuuu"),
+          InlineKeyboardButton("𝐃ᴇᴠ 𝐏ᴀᴘᴀ ", url="https://t.me/NoMoreTyMWaStE"),
           ],
     ]
     
